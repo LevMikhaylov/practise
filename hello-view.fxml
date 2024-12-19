@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.crudapp.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+    <TableView fx:id="entities">
+        <columns>
+            <TableColumn text="id" fx:id="id"></TableColumn>
+            <TableColumn text="name" fx:id="name"></TableColumn>
+            <TableColumn text="description" fx:id="description"></TableColumn>
+            <TableColumn text="createdat" fx:id="createdAt"></TableColumn>
+            <TableColumn text="updateat" fx:id="updatedAt"></TableColumn>
+        </columns>
+    </TableView>
+    <Button text="Создать" onAction="#onCreateButtonClick"></Button>
+    <Button text="Показать" onAction="#onShowButtonClick"></Button>
+    <Button text="Редактировать" onAction="#onUpdateButtonClick"></Button>
+    <Button text="Удалить" onAction="#onDeleteButtonClick"></Button>
+</VBox>
