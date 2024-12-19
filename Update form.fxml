@@ -1,0 +1,16 @@
+<?import javafx.geometry.Insets?>
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.crudapp.CUD.UpdateFormController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+    <Label text="Введите id"></Label>
+    <TextField fx:id="tf5"></TextField>
+    <Label text="Введите новое название"></Label>
+    <TextField fx:id="tf6"></TextField>
+    <Label text="Введите новое описание"></Label>
+    <TextField fx:id="tf7"></TextField>
+    <Label text="Введите новую дату создания"></Label>
+    <DatePicker fx:id="dp1"></DatePicker>
+    <Button text="Изменить" onAction="#onUpdateButtonClick"></Button>
+</VBox>
